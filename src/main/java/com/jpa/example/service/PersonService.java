@@ -39,6 +39,11 @@ public class PersonService {
 		return name;
 	}
 
+	public List<Person> getPersonInfoByFirstNameAndEmail(String firstName, String gmail) {
+		List<Person> list = dao.findByFirstNameAndGmail(firstName, gmail);
+		return list;
+	}
+
 	
 
 }

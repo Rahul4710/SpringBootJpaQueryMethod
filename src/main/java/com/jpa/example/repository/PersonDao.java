@@ -10,5 +10,6 @@ import com.jpa.example.entity.Person;
 public interface PersonDao extends CrudRepository<Person, Integer> {
 	
 	 List<Person> findByLastName(String lastName);
+	 List<Person> findByFirstNameAndGmail(String firstName,String gmail);
 
 }

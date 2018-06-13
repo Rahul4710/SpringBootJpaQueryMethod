@@ -28,7 +28,17 @@ public class SpringBootJpaQueryMethodsDemoApplication implements CommandLineRunn
 		//savePersons();
 		//getPersonById();
 		//deletePersonById();
-		getPersonByLastName();
+		//getPersonByLastName();
+		getPersonInfoByFirstNameAndEmail();
+		
+	}
+
+	private void getPersonInfoByFirstNameAndEmail() {
+		List<Person> list=service.getPersonInfoByFirstNameAndEmail("priya","priya890@gmail.com");
+		for (Person person : list) {
+			System.out.println(person);
+			
+		}
 		
 	}
 
